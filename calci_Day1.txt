@@ -1,0 +1,36 @@
+public class Caluculator {
+ public static void main(String[] args) {
+	 int result;
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Enter the operands");
+	 int a=sc.nextInt();
+	 int b=sc.nextInt();
+	 System.out.println("Enter the operand");
+	 char operand=sc.next().charAt(0);
+	 switch(operand) {
+		 case '+' :
+			 result=a+b;
+			 System.out.println(result);
+	         break;
+		 case '-' :
+			 result=a-b;
+			 System.out.println(result);
+	         break;
+		 case '*' :
+			 result=a*b;
+			 System.out.println(result);
+	          break;
+		 case '/' :
+			 result=a/b;
+			 System.out.println(result);
+	         break;
+		 case '%' :
+			 result=a%b;
+			 System.out.println(result);
+	         break;
+	       default:
+	    	   System.out.println("wrong input");
+	       
+	 }
+ }
+}
