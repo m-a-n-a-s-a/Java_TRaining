@@ -1,0 +1,24 @@
+package Training;
+
+import java.util.*;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		int reverse=1;
+		int digit=1;
+		while(num>0) {
+
+				digit=num%10;
+				reverse=digit;
+				System.out.print(reverse);	
+				num=num/10;
+			
+		}
+		
+	}
+
+}
